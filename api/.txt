@@ -1,2 +1,0 @@
-go mod init github.com/bisruxa/go_projects
-mkdir api 

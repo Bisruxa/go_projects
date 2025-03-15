@@ -19,22 +19,22 @@ var mockLoginDetails = map[string]LoginDetails{
 
 }
 var mockCoinDetails = map[string]CoinDetails{
-	"alex":CoinDetails{
+	"alex":{
 		Coins:10,
 		Username:"alex",
 	},
-	"jason":CoinDetails{
+	"jason":{
 		Coins:20,
 		Username:"jason",
 	},
-	"marie":CoinDetails{
+	"marie":{
 		Coins:30,
 		Username:"marie",
 	},
 
 }
 func (d *mockDB) GetUserLoginDetails(username string) *LoginDetails{
-	time.Sleep(1*time.Second)
+	time.Sleep(time.Second * 1)
 	var clientData = LoginDetails{}
 	clientData ,ok := mockLoginDetails[username]
 	if !ok{

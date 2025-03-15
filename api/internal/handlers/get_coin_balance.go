@@ -3,7 +3,7 @@ import (
 	"encoding/json"
 	"net/http"
 		log "github.com/sirupsen/logrus"
-			"github.com/Bisruxa/go_projects/api/internal/tools"
+			"github.com/Bisruxa/go_projects/internal/tools"
 	"github.com/Bisruxa/go_projects/api"
 	"github.com/gorilla/schema"
 )
